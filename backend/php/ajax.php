@@ -24,7 +24,7 @@ if(isset($_GET))
 		*/	
 		if ((isset($_GET['deleterow'])))
 			{
-			$id =int($_GET['id']);
+			$id =$_GET['id'];
 			$deleterow = $todo->DeleteRow($id);
 			$getrows = $todo->GetRows();
 			}
@@ -34,7 +34,7 @@ if(isset($_GET))
 		if ((isset($_GET['addrow'])))
 			{
 			if (trim($_GET['text']) != ""){
-			$text =string($_GET['text']);
+			$text =$_GET['text'];
 			$text = strip_tags($text);
 			$addrow = $todo->SetRow($text);
 			}
@@ -46,7 +46,7 @@ if(isset($_GET))
 		if ((isset($_GET['editrow'])))
 			{
 			$status =$_GET['status'];
-			$id = int($_GET['id']);
+			$id = $_GET['id'];
 			$addrow = $todo->EditRow($id, $status);
 			$getrows = $todo->GetRows();
 			}	
