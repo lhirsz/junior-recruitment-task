@@ -1,1 +1,30 @@
-plik startowy aplikacji
+﻿<!doctype html>
+<html>
+	<head>
+		<title>ToDoList</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> 
+		<link rel="stylesheet" href="../assets/style.css">
+	</head>
+	
+	<body onload="onload();">
+		<div class="container">
+			<section class="todo">
+				<ul class="todo-header">
+					<li>ToDo List</li>     
+				</ul>
+		<div id="tasks"></div>
+			<ul class="todo-addrow">
+					<a style="float:left;" href="#" onclick="add_row(),clear_input() ;"><img style="width:25px;	"  src = "../assets/img/plus.png" /></a>
+				<li>
+					<form action="#" onsubmit="add_row(),clear_input()">
+						<input class="addrow" placeholder="wpisz nowe zadanie" type="text" id="addrow" required autofocus autocomplete="off"/>
+					</form>
+				</li>
+			</ul>
+			</section>
+		</div>
+
+	</body>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="../backend/js/functions.js"></script>
+</html>

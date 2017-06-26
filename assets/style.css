@@ -1,0 +1,157 @@
+body {
+  line-height: 1;
+  font-family: 'Lato', sans-serif;
+  color: #404040;
+  background: #e9f0f4;
+}
+
+.customcheckbox input[type=checkbox]:checked + label:before {
+	background:green;
+}
+
+
+
+
+ul, li,section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+.trash{
+	width:25px;
+	float:right;
+}
+
+
+input#addrow {
+margin-left: 15px;
+width: 100%;
+height : 20px;
+border: none;
+
+
+}
+
+
+
+input:focus#addrow {
+
+    outline: none;
+}
+
+
+.container {
+  margin: 50px auto;
+  width: 720px;
+}
+.container .todo {
+  margin: 0 auto;
+}
+
+.todo {
+  position: relative;
+  padding-bottom: 12px	;
+  background: white;
+  min-height:450px;
+  border: 1px solid;
+  border-color: #dfdcdc #d9d6d6 #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.todo:before, .todo:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 4px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.todo:after {
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.todo:before {
+  bottom: -5px;
+  left: 2px;
+  right: 2px;
+  border-color: #c4c4c4;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.todo-header {
+	
+  padding: 20px;
+  padding-left:50px;
+  height: 15px;
+  background-color:#2e3641;
+}
+.todo-header li {
+  float: left;
+  color: white;
+  font-weight:700;
+  font-size:18px;
+}
+
+
+.todo-list {
+  border-top: 1px solid #e6ebed;
+}
+.todo-list:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35px;
+  width: 3px;
+  z-index: 2;
+  border: 1px solid #f2e3df;
+  border-width: 0 1px;
+}
+.todo-list li {
+  position: relative;
+  padding: 7px 15px 7px 50px;
+  line-height: 21px;
+  font-weight:400;
+  font-size: 14px;
+  color: #2e3641;
+  border-bottom: 1px solid #e6ebed;
+}
+.todo-list .checkbox {
+  display: block;
+  margin-top:10px;
+  position: absolute;
+  height:15px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 35px;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  border:none;
+}
+
+.todo-list .done {
+  color: #9eb2c0;
+  text-decoration: line-through;
+}
+.todo-addrow {
+  margin: 12px 12px 0 7px;
+  height: 22px;
+}
+.todo-addrow li {
+  float: left;
+}
+
+
+
